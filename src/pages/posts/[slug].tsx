@@ -15,7 +15,7 @@ interface PostProps {
     }
 }
 
-export default function Post({post}: PostProps) {
+export default function Post({ post }: PostProps) {
     return(
         <>
             <Head>
@@ -53,7 +53,7 @@ export const getServerSideProps: GetServerSideProps = async ({ req, params }) =>
     const response = await prismic.getByUID<any>('publication' , String(slug), {})
 
     const post = {
-        slug: response.uid,
+        slug,
         title: RichText.asText(response.data.title),
         content: RichText.asHtml(response.data.content),
         updatedAt: new Date(response.last_publication_date).toLocaleDateString('pt-BR',{
