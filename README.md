@@ -1,5 +1,5 @@
 <h1>IgNews</h1>
-    Um blog, com diversos conteúdos, com uma assinatura mensal, sendo realizada através do STRIPE.
+    Um blog, com diversos conteúdos, com uma assinatura mensal sendo realizada pela plataforma de pagamentos STRIPE.
     Caso o usuário não queira assinar, uma prévia do contéudo ficará visível.
     
 ![homepage](https://user-images.githubusercontent.com/73999334/174404032-798479a6-cfbe-4dc7-b71f-4a086a735bef.png)
